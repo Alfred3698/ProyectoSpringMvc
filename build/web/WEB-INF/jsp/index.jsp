@@ -9,11 +9,11 @@
     </head>
 
     <body>
-        <form action="holamundo.htm" method="post">
-            Valor 1: 
+        <form action="holaMundo.jsp" method="post">
+            <h3>¿Cuál es tu nombre?</h3>
             <input type="text" name="nombre" value=""><br>
-            Valor 2: 
-            <input type="label" name="apellido" value=""><br>
+            <h3>¿cuál es tu apellido?</h3> 
+            <input type="text" name="apellido" value=""><br>
             <input type="submit" value="Enviar">
         </form>
     </body>

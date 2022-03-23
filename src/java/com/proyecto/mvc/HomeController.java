@@ -19,14 +19,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 
-    @RequestMapping(value = "holamundo.htm", method = RequestMethod.POST)
-    public String holaMundo(Locale locale, Model model, ClienteForm clienteForm) {
+    @RequestMapping(value = "holaMundo.jsp", method = RequestMethod.POST)
+    public void holaMundo(Locale locale, Model model, ClienteForm clienteForm) 
+    {
 
-        System.out.println("nombre:" + clienteForm.getNombre());
-        System.out.println("apellido:" + clienteForm.getApellido());
-        System.out.println("Hola mundo");
+        System.out.println("Nombre:" + clienteForm.getNombre());
+        System.out.println("Apellido:" + clienteForm.getApellido());
+        System.out.println("Tu saludo para el mundo es: ");
         model.addAttribute("formulario", clienteForm);
-        return "holaMundo";
     }
 
 }
